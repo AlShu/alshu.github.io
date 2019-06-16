@@ -183,7 +183,19 @@
       }
       ul.one-line li{
         display: inline;
-        width: 50%;
+        width: 45%;
+        position: relative;
+      }
+      ul.one-line li + li{
+        padding-left: 5%;
+      }
+      ul.one-line li + li::before{
+        position: absolute;
+        height: 100%;
+        content: ' ';
+        background: gray;
+        width: 1px;
+        margin-left: -5%;
       }
       .many-thanks {
         display: none;
@@ -249,9 +261,11 @@
 
     <h3>Technologies</h3>
     <p>
-      PostgreSQL DB, NGINX, NodeJs, Angular, React, SASS
+      Ruby on Rails, PostgreSQL
       <br/>
-      HEROKU, AWS
+      NodeJs, React, Angular, SASS
+      <br/>
+      HEROKU, AWS, NGINX
     </p>
 
 
@@ -325,11 +339,11 @@
     <ul class="one-line clear-fix">
       <li class="float-left">
         <h3> English</h3>
-        <h4> communication, tech docs</h4>
+        <p> communication, tech docs</p>
       </li>
       <li class="float-left">
         <h3> Russian</h3>
-        <h4> native </h4>
+        <p> native </p>
       </li>
     </ul>
     <h1>Interests and Hobbies</h1>
